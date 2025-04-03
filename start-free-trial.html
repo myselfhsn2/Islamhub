@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Free Trial - IslamHub.org</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+                padding: 0 10px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+
+            .btn-primary {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+
+        .trial-form-section {
+            padding: 4rem 0;
+            background-color: var(--light-color);
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .google-form {
+            width: 100%;
+            min-height: 1453px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 1rem;
+                margin: 0 15px;
+            }
+
+            .google-form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Include header -->
+    <?php include 'components/header.html'; ?>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Start Your Free Trial</h1>
+                <p>Experience our teaching quality with a 7-day free trial. No commitments, no credit card required.</p>
+            </div>
+        </section>
+
+        <section class="trial-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <iframe class="google-form" 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdBzhz5rLBMVe1Ggd0uKLNToK3wOEuqR02Cv0YY_jPNt0pgtg/viewform?embedded=true" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include footer -->
+    <?php include 'components/footer.html'; ?>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
