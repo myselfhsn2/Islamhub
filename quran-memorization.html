@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Memorization (Hifz) Course - IslamHub.org</title>
+    <meta name="description" content="Memorize the Holy Quran with proven techniques and personalized guidance from expert huffaz at IslamHub.org.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        .course-detail-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') center/cover no-repeat;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        
+        .course-detail-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .course-detail-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .course-detail-section {
+            padding: 5rem 0;
+        }
+        
+        .course-detail-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+        
+        .course-info h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .course-info p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .course-sidebar {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course-sidebar h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .course-key-points li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .course-key-points li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+        
+        .course-sidebar .btn {
+            width: 100%;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        .course-curriculum {
+            margin-top: 3rem;
+        }
+        
+        .curriculum-item {
+            border: 1px solid #e9e9e9;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .curriculum-header {
+            background-color: var(--light-color);
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .curriculum-content {
+            padding: 1rem;
+            display: none;
+        }
+        
+        .curriculum-content.active {
+            display: block;
+        }
+        
+        .method-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .method-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 992px) {
+            .course-detail-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be injected here -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Course Hero Section -->
+        <section class="course-detail-hero">
+            <div class="container">
+                <h1>Quran Memorization (Hifz) Course</h1>
+                <p>Memorize the Holy Quran with proven techniques and personalized guidance from expert huffaz</p>
+            </div>
+        </section>
+
+        <!-- Course Details Section -->
+        <section class="course-detail-section">
+            <div class="container">
+                <div class="course-detail-content">
+                    <div class="course-info">
+                        <h2>About This Course</h2>
+                        <p>The Quran Memorization (Hifz) course at IslamHub.org is designed to help students memorize the Holy Quran systematically and effectively. Our experienced huffaz (Quran memorizers) use proven techniques to guide you through your memorization journey, whether you aim to memorize selected surahs or the entire Quran.</p>
+                        
+                        <p>Our personalized approach ensures that each student receives a customized memorization plan based on their abilities, schedule, and goals. With consistent guidance and effective revision strategies, we make the noble goal of Quran memorization achievable for everyone.</p>
+                        
+                        <div class="method-box">
+                            <h3>Our Memorization Method</h3>
+                            <p>At IslamHub.org, we follow a structured approach to Quran memorization that combines traditional and modern techniques:</p>
+                            <ol>
+                                <li><strong>Small Portions:</strong> Breaking down the text into manageable segments</li>
+                                <li><strong>Repetition:</strong> Systematic repetition to strengthen memory</li>
+                                <li><strong>Regular Revision:</strong> Structured review of previously memorized portions</li>
+                                <li><strong>Connection:</strong> Understanding meanings to aid memorization</li>
+                                <li><strong>Consistency:</strong> Daily practice for better retention</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="course-curriculum">
+                            <h2>Course Structure</h2>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Phase 1: Foundation</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Assessment of recitation skills and tajweed</li>
+                                        <li>Development of personalized memorization plan</li>
+                                        <li>Introduction to effective memorization techniques</li>
+                                        <li>Starting with shorter surahs (Juz 'Amma)</li>
+                                        <li>Establishing daily routine and practice habits</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Phase 2: Building Momentum</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Progressive memorization of longer surahs</li>
+                                        <li>Implementation of structured revision system</li>
+                                        <li>Connection of ayahs with meanings and context</li>
+                                        <li>Techniques for challenging passages</li>
+                                        <li>Midway assessment and plan adjustment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Phase 3: Advanced Memorization</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Systematic memorization of multiple pages daily</li>
+                                        <li>Advanced retention techniques</li>
+                                        <li>Comprehensive revision schedule</li>
+                                        <li>Memory strengthening exercises</li>
+                                        <li>Progress tracking and milestone celebrations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Phase 4: Mastery and Certification</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Final revision of all memorized portions</li>
+                                        <li>Complete Quran recitation from memory</li>
+                                        <li>Tajweed refinement and perfection</li>
+                                        <li>Final assessment and evaluation</li>
+                                        <li>Ijazah (certification) preparation and award</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-sidebar">
+                        <h3>Key Highlights</h3>
+                        <ul class="course-key-points">
+                            <li>One-on-one sessions with hafiz teachers</li>
+                            <li>Personalized memorization plan</li>
+                            <li>Flexible scheduling</li>
+                            <li>Proven memorization techniques</li>
+                            <li>Structured revision system</li>
+                            <li>Progress tracking and assessments</li>
+                            <li>Certificate upon completion</li>
+                        </ul>
+                        <a href="start-free-trial.html" class="btn btn-primary">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Learning Resources Section -->
+        <section class="free-resources-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Free Learning Resources</h2>
+                    <p>Enhance your Quran memorization journey with these valuable free resources</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Memorization Techniques Guide</h3>
+                            <p>A comprehensive PDF guide to effective Quran memorization strategies and techniques.</p>
+                            <a href="resources/quran-memorization/memorization-techniques.html" class="resource-link">View Guide <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Revision Planner</h3>
+                            <p>A printable revision schedule template to help you organize your memorization and revision.</p>
+                            <a href="resources/quran-memorization/memorization-techniques.pdf" class="resource-link">Download Planner <i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Recommended Apps</h3>
+                            <p>A curated list of the best mobile applications to assist with Quran memorization.</p>
+                            <a href="resources/quran-memorization/memorization-techniques.html#apps" class="resource-link">View List <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Memory Enhancement Webinar</h3>
+                            <p>A free recorded webinar on memory techniques specifically for Quran memorization.</p>
+                            <a href="resources/quran-memorization/memorization-techniques.html#advanced" class="resource-link">View Details <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be injected here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/header-footer-theme.js"></script>
+    <script>
+        // Toggle curriculum content
+        document.addEventListener('DOMContentLoaded', function() {
+            const curriculumHeaders = document.querySelectorAll('.curriculum-header');
+            
+            curriculumHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                    
+                    // Toggle icon
+                    const icon = this.querySelector('i');
+                    if (content.classList.contains('active')) {
+                        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

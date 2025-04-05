@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Islamic Educational Resources - IslamHub.org">
+    <title>Free Resources - IslamHub.org</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .resources-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') center/cover no-repeat;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        
+        .resources-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resources-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .resources-section {
+            padding: 5rem 0;
+        }
+        
+        .resource-category {
+            margin-bottom: 4rem;
+        }
+        
+        .resource-category h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .resource-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .resource-card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            position: relative;
+        }
+        
+        .resource-card-header h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        .resource-icon {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .resource-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .resource-card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .resource-card-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        
+        .resource-links {
+            margin-top: auto;
+        }
+        
+        .resource-link {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s, transform 0.2s;
+        }
+        
+        .resource-link:hover {
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+        
+        .resource-link i {
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be inserted by header-footer-theme.js -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Resources Hero Section -->
+        <section class="resources-hero">
+            <div class="container">
+                <h1>Free Educational Resources</h1>
+                <p>Access our collection of free Islamic educational materials to enhance your learning journey</p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources-section">
+            <div class="container">
+                <!-- Quran Reading Resources -->
+                <div class="resource-category">
+                    <h2>Quran Reading Resources</h2>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-card-header">
+                                <div class="resource-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h3>Tajweed Basics</h3>
+                            </div>
+                            <div class="resource-card-content">
+                                <p>Learn the fundamental rules of Tajweed to improve your Quranic recitation. This guide covers pronunciation points, common rules, and practical exercises.</p>
+                                <div class="resource-links">
+                                    <a href="quran-reading/tajweed-basics.html" class="resource-link"><i class="fas fa-external-link-alt"></i> View Full Guide</a>
+                                    <a href="quran-reading/tajweed-basics.pdf" class="resource-link"><i class="fas fa-download"></i> Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-card-header">
+                                <div class="resource-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h3>Quran Reading Tips</h3>
+                            </div>
+                            <div class="resource-card-content">
+                                <p>Practical tips and advice for improving your Quran reading skills. These strategies will help beginners develop good habits and overcome common challenges.</p>
+                                <div class="resource-links">
+                                    <a href="quran-reading/quran-reading-tips.html" class="resource-link"><i class="fas fa-external-link-alt"></i> View Full Guide</a>
+                                    <a href="quran-reading/quran-reading-tips.pdf" class="resource-link"><i class="fas fa-download"></i> Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quran Memorization Resources -->
+                <div class="resource-category">
+                    <h2>Quran Memorization Resources</h2>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-card-header">
+                                <div class="resource-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Memorization Techniques</h3>
+                            </div>
+                            <div class="resource-card-content">
+                                <p>Effective methods to help you memorize the Quran with proper understanding and retention. Learn proven techniques used by huffaz around the world.</p>
+                                <div class="resource-links">
+                                    <a href="quran-memorization/memorization-techniques.html" class="resource-link"><i class="fas fa-external-link-alt"></i> View Full Guide</a>
+                                    <a href="quran-memorization/memorization-techniques.pdf" class="resource-link"><i class="fas fa-download"></i> Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tafseer Resources -->
+                <div class="resource-category">
+                    <h2>Tafseer Resources</h2>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-card-header">
+                                <div class="resource-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3>Introduction to Tafseer</h3>
+                            </div>
+                            <div class="resource-card-content">
+                                <p>An introduction to the science of Quranic exegesis (tafseer) and its significance in comprehending the Holy Quran's deeper meanings.</p>
+                                <div class="resource-links">
+                                    <a href="tafseer/tafseer-introduction.html" class="resource-link"><i class="fas fa-external-link-alt"></i> View Full Guide</a>
+                                    <a href="tafseer/tafseer-introduction.pdf" class="resource-link"><i class="fas fa-download"></i> Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Arabic Language Resources -->
+                <div class="resource-category">
+                    <h2>Arabic Language Resources</h2>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-card-header">
+                                <div class="resource-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <h3>Arabic Alphabet</h3>
+                            </div>
+                            <div class="resource-card-content">
+                                <p>A comprehensive guide to the Arabic alphabet with pronunciation tips, writing practice, and learning strategies for beginners.</p>
+                                <div class="resource-links">
+                                    <a href="arabic/arabic-alphabet.html" class="resource-link"><i class="fas fa-external-link-alt"></i> View Full Guide</a>
+                                    <a href="arabic/arabic-alphabet.pdf" class="resource-link"><i class="fas fa-download"></i> Download PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be inserted by header-footer-theme.js -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/header-footer-theme.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html> 
