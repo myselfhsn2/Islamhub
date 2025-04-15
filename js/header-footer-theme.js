@@ -7,9 +7,20 @@ function initThemeToggle() {
     // Set initial theme
     if (storedTheme === 'dark' || (!storedTheme && prefersDarkScheme.matches)) {
         document.documentElement.setAttribute('data-theme', 'dark');
+        updateThemeIcons('dark');
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
+        updateThemeIcons('light');
     }
+    
+    // Listen for OS theme changes
+    prefersDarkScheme.addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+            const newTheme = e.matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            updateThemeIcons(newTheme);
+        }
+    });
     
     // Add WhatsApp floating button
     const whatsappButton = document.createElement('a');
@@ -20,6 +31,15 @@ function initThemeToggle() {
     whatsappButton.setAttribute('rel', 'noopener noreferrer');
     whatsappButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
     document.body.appendChild(whatsappButton);
+}
+
+// Helper function to update theme icons
+function updateThemeIcons(theme) {
+    const navThemeToggles = document.querySelectorAll('.nav-theme-toggle');
+    navThemeToggles.forEach(toggle => {
+        toggle.innerHTML = theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+    });
 }
 
 // Header and Footer Components
@@ -144,36 +164,22 @@ function initNavThemeToggle() {
     const navThemeToggles = document.querySelectorAll('.nav-theme-toggle');
     
     if (navThemeToggles.length > 0) {
-        // Set initial icon based on current theme
+        // Update initial icons
         const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        updateThemeIcons(currentTheme);
         
-        // Update all toggle buttons
+        // Toggle theme when button is clicked
         navThemeToggles.forEach(toggle => {
-            if (currentTheme === 'dark') {
-                toggle.innerHTML = '<i class="fas fa-sun"></i>';
-            } else {
-                toggle.innerHTML = '<i class="fas fa-moon"></i>';
-            }
-            
-            // Toggle theme when button is clicked
             toggle.addEventListener('click', () => {
-                const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
                 
-                if (currentTheme === 'light') {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                    // Update all toggle buttons
-                    navThemeToggles.forEach(btn => {
-                        btn.innerHTML = '<i class="fas fa-sun"></i>';
-                    });
-                } else {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                    // Update all toggle buttons
-                    navThemeToggles.forEach(btn => {
-                        btn.innerHTML = '<i class="fas fa-moon"></i>';
-                    });
-                }
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeIcons(newTheme);
+                
+                // Dispatch custom event for theme change
+                document.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme: newTheme } }));
             });
         });
     }

@@ -197,4 +197,43 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, { passive: true });
     }
+
+    // Handle pricing plan selection and price range slider
+    const pricingPlan = document.getElementById('pricingPlan');
+    const priceRangeContainer = document.getElementById('priceRangeContainer');
+    const priceRange = document.getElementById('priceRange');
+    const priceDisplay = document.getElementById('priceDisplay');
+
+    if (pricingPlan && priceRangeContainer && priceRange && priceDisplay) {
+        // Handle pricing plan changes
+        pricingPlan.addEventListener('change', function() {
+            if (this.value === 'flexible') {
+                priceRangeContainer.classList.add('active');
+            } else {
+                priceRangeContainer.classList.remove('active');
+            }
+        });
+
+        // Handle price range changes
+        priceRange.addEventListener('input', function() {
+            priceDisplay.textContent = this.value;
+        });
+
+        // Handle form submission
+        const trialForm = document.getElementById('trialForm');
+        if (trialForm) {
+            trialForm.addEventListener('submit', function(e) {
+                const selectedPlan = pricingPlan.value;
+                if (selectedPlan === 'flexible') {
+                    const customPrice = priceRange.value;
+                    // Add custom price to form data
+                    const priceInput = document.createElement('input');
+                    priceInput.type = 'hidden';
+                    priceInput.name = 'selected_price';
+                    priceInput.value = customPrice;
+                    this.appendChild(priceInput);
+                }
+            });
+        }
+    }
 });
