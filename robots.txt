@@ -1,0 +1,26 @@
+# robots.txt for IslamHub.org
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /courses.html
+Allow: /pricing.html
+Allow: /quran-reading.html
+Allow: /quran-memorization.html
+Allow: /tafseer.html
+Allow: /arabic.html
+Allow: /fiqh.html
+Allow: /academic-tutoring.html
+Allow: /start-free-trial.html
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Disallow admin or private areas if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /components/
+Disallow: /config/
+
+# Sitemap location
+Sitemap: https://islamhub.org/sitemap.xml 

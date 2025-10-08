@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1TBZCW8N5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S1TBZCW8N5');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Language Course - IslamHub.org</title>
+    <meta name="description" content="Master the Arabic language from basic to advanced levels with our comprehensive course taught by native speakers and expert instructors.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        .course-detail-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') center/cover no-repeat;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        
+        .course-detail-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .course-detail-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .course-detail-section {
+            padding: 5rem 0;
+        }
+        
+        .course-detail-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+        
+        .course-info h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .course-info p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .course-sidebar {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course-sidebar h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .course-key-points li {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .course-curriculum {
+            margin-top: 3rem;
+        }
+        
+        .curriculum-item {
+            border: 1px solid #e9e9e9;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .curriculum-header {
+            background-color: var(--light-color);
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .curriculum-content {
+            padding: 1rem;
+            display: none;
+        }
+        
+        .curriculum-content.active {
+            display: block;
+        }
+        
+        .language-levels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .level-card {
+            flex: 1;
+            min-width: 230px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .level-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .level-header h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        .level-content {
+            padding: 1.5rem;
+        }
+        
+        .level-content p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .sample-words {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .sample-words h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .sample-word {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem;
+        }
+        
+        .sample-word span {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        
+        @media (max-width: 992px) {
+            .course-detail-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .language-levels {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header will be injected here -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Course Hero Section -->
+        <section class="course-detail-hero">
+            <div class="container">
+                <h1>Arabic Language Course</h1>
+                <p>Master the Arabic language from basics to advanced levels with native speakers</p>
+            </div>
+        </section>
+
+        <!-- Course Details Section -->
+        <section class="course-detail-section">
+            <div class="container">
+                <div class="course-detail-content">
+                    <div class="course-info">
+                        <h2>About This Course</h2>
+                        <p>The Arabic Language course at IslamHub.org is designed to help students of all ages acquire proficiency in both Modern Standard Arabic (MSA) and Quranic Arabic. Whether you're a complete beginner or looking to enhance your existing skills, our expert instructors will guide you through a comprehensive curriculum tailored to your goals and learning pace.</p>
+                        
+                        <p>Arabic is not only the language of the Quran but also spoken by over 420 million people worldwide. Learning Arabic opens doors to deeper understanding of Islamic texts, rich cultural heritage, and global opportunities. Our course combines traditional teaching methods with modern interactive approaches to make learning Arabic engaging and effective.</p>
+                        
+                        <div class="language-levels">
+                            <div class="level-card">
+                                <div class="level-header">
+                                    <h3>Beginner Level</h3>
+                                </div>
+                                <div class="level-content">
+                                    <p>Start your Arabic journey with essential foundations:</p>
+                                    <ul>
+                                        <li>Arabic alphabet and pronunciation</li>
+                                        <li>Basic reading and writing skills</li>
+                                        <li>Simple vocabulary for everyday use</li>
+                                        <li>Introductory grammar concepts</li>
+                                        <li>Basic conversation practice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="level-card">
+                                <div class="level-header">
+                                    <h3>Intermediate Level</h3>
+                                </div>
+                                <div class="level-content">
+                                    <p>Expand your Arabic capabilities:</p>
+                                    <ul>
+                                        <li>Advanced vocabulary building</li>
+                                        <li>Complex sentence structures</li>
+                                        <li>Reading comprehension skills</li>
+                                        <li>Intermediate grammar rules</li>
+                                        <li>Practical conversation scenarios</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="level-card">
+                                <div class="level-header">
+                                    <h3>Advanced Level</h3>
+                                </div>
+                                <div class="level-content">
+                                    <p>Refine your Arabic to near-native fluency:</p>
+                                    <ul>
+                                        <li>Sophisticated vocabulary usage</li>
+                                        <li>Advanced grammar applications</li>
+                                        <li>Classical Arabic texts</li>
+                                        <li>Cultural and literary context</li>
+                                        <li>Fluent conversational skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sample-words">
+                            <h3>Sample Arabic Vocabulary</h3>
+                            <div class="sample-word">سَلام <span>Peace (Salaam)</span></div>
+                            <div class="sample-word">كِتاب <span>Book (Kitaab)</span></div>
+                            <div class="sample-word">مَدْرَسَة <span>School (Madrasah)</span></div>
+                            <div class="sample-word">عِلْم <span>Knowledge (Ilm)</span></div>
+                            <div class="sample-word">قَلَم <span>Pen (Qalam)</span></div>
+                        </div>
+                        
+                        <div class="course-curriculum">
+                            <h2>Course Structure</h2>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Module 1: Arabic Alphabet and Phonetics</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Introduction to Arabic writing system</li>
+                                        <li>Learning the alphabet and letter forms (initial, medial, final)</li>
+                                        <li>Pronunciation of Arabic sounds</li>
+                                        <li>Vowel marks and diacritical signs</li>
+                                        <li>Basic reading exercises</li>
+                                        <li>Arabic numerals and counting</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Module 2: Essential Vocabulary and Basic Grammar</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Everyday vocabulary (greetings, family, house, food)</li>
+                                        <li>Personal pronouns and possessives</li>
+                                        <li>Gender and number in Arabic nouns</li>
+                                        <li>Basic sentence structure</li>
+                                        <li>Present tense verbs</li>
+                                        <li>Question formation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Module 3: Intermediate Grammar and Communication</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Past and future tense</li>
+                                        <li>Verbal patterns and forms</li>
+                                        <li>Noun cases and declensions</li>
+                                        <li>Idafa (possessive) construction</li>
+                                        <li>Conversational practice in real-life scenarios</li>
+                                        <li>Reading short texts and dialogues</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="curriculum-item">
+                                <div class="curriculum-header">
+                                    <h3>Module 4: Advanced Arabic and Quranic Language</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="curriculum-content">
+                                    <ul>
+                                        <li>Complex grammatical structures</li>
+                                        <li>Literary and classical Arabic vocabulary</li>
+                                        <li>Introduction to Quranic language features</li>
+                                        <li>Reading and analyzing Arabic texts</li>
+                                        <li>Advanced writing and composition</li>
+                                        <li>Cultural contexts and expressions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-sidebar">
+                        <h3>Key Highlights</h3>
+                        <ul class="course-key-points">
+                            <li>One-on-one personalized classes</li>
+                            <li>Native Arabic-speaking teachers</li>
+                            <li>Flexible scheduling</li>
+                            <li>Focus on practical communication</li>
+                            <li>Customized learning pace</li>
+                            <li>Quranic Arabic integration</li>
+                            <li>Regular progress assessments</li>
+                        </ul>
+                        <a href="start-free-trial.html" class="btn btn-primary">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be injected here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/header-footer-theme.js"></script>
+    <script>
+        // Toggle curriculum content
+        document.addEventListener('DOMContentLoaded', function() {
+            const curriculumHeaders = document.querySelectorAll('.curriculum-header');
+            
+            curriculumHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                    
+                    // Toggle icon
+                    const icon = this.querySelector('i');
+                    if (content.classList.contains('active')) {
+                        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
